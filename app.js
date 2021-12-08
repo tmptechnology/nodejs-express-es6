@@ -129,7 +129,7 @@ mongoose.connect(vars.mongo.uri, {
 
 
 /* Static files */
-app.use(express.static(path.join(__dirname, '../../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 /* Routers */
 app.use('/', appRoutes);
